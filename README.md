@@ -1,0 +1,1 @@
+# de.willuhn.jameica.maven
