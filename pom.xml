@@ -1,5 +1,4 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>de.willuhn</groupId>
 	<artifactId>jameica</artifactId>
@@ -7,12 +6,12 @@
 	<packaging>jar</packaging>
 
 	<licenses>
-	  <license>
-		<name>GNU General Public License (GPL)</name>
-		<url>https://www.gnu.org/licenses/gpl-2.0.txt</url>
-	  </license>
+		<license>
+			<name>GNU General Public License (GPL)</name>
+			<url>https://www.gnu.org/licenses/gpl-2.0.txt</url>
+		</license>
 	</licenses>
-	
+
 	<organization>
 		<name>Olaf Willuhn</name>
 		<url>https://willuhn.de</url>
@@ -25,15 +24,15 @@
 			<url>https://willuhn.de</url>
 		</developer>
 	</developers>
-	
+
 	<properties>
 		<url.jameica>https://www.willuhn.de/products/jameica/releases/2.8/jameica/jameica-2.8.4.zip</url.jameica>
 	</properties>
 
 	<distributionManagement>
 		<repository>
-			<id>bintray-repo-jameica</id>
-			<url>https://api.bintray.com/maven/seiferma/jameica/jameica/;publish=1</url>
+			<id>local</id>
+			<url>file://${project.build.directory}/local-repo</url>
 		</repository>
 	</distributionManagement>
 
